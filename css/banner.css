@@ -1,0 +1,49 @@
+.banner{
+
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  height: 360px;
+  width: auto;
+
+}
+
+.banner__img{
+  
+  height: 352px;
+  width: auto;
+  background-image:url(../img/banner-image.png);
+  background-position: center;
+ 
+}
+
+.banner__anuncio{
+
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin-left: 152px;
+  margin-top: 150px;
+}
+
+.banner__titulo{
+
+  font-size: 52px;
+  line-height: 61px;
+  color: #FFFFFF;
+  
+}
+
+.banner__descuento{
+
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  
+}
+
+
+
+
+
+  

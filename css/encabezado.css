@@ -1,0 +1,133 @@
+.encabezado{
+
+  Height: 120px;
+  width: auto;
+  background: #cc1616;
+  border: solid 1px chocolate;
+  
+}
+
+.menu{
+
+  display: flex;
+  Padding: 32px 0 32px 0;
+  width: auto;
+  height: 115px;
+  position: relative;
+  border: solid 1px rgb(30, 210, 111);
+
+}
+
+.menu__link1{
+  
+  position: absolute;
+  left:152px;
+  top: 40px;
+}
+
+.menu__link2{
+
+  position: absolute;
+  left: 200px;
+  top:50px;
+  
+}
+
+.menu__span{
+
+  
+  color: #2A7AE4;
+ 
+
+}
+
+.menu__login{
+
+position: absolute;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+padding: 12px 30px;
+transition: .4s;
+color: #2A7AE4;
+border: none;
+border-radius: 30px;
+right:152px ;
+
+}
+
+.menu__login:hover{
+
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.menu__lupa-div{
+
+  padding: 5px;
+  position: relative;
+  position: absolute;
+  border: solid 1px blue;
+  width:450px;
+  height:60px;
+  left: 360px;
+
+ 
+
+}
+
+.menu__lupa{
+
+position: absolute;
+width: 0;
+height: 40px;
+padding: 8px 16px;
+background: #F5F5F5;
+border-radius: 20px;
+transition: all 0.9s ease;
+left:10px;
+}
+
+.menu__lupa::placeholder{
+
+  color: #A2A2A2;
+  text-indent:40px;
+  
+}
+.menu__btn{
+
+position: absolute;
+top: 1px;
+left:10px;
+width: 55px;
+height: 55px;
+background-color: #440080;
+line-height: 55px;
+text-align: center;
+color: white;
+font-size: 20px;
+border-radius: 50%;
+cursor: pointer;
+
+}
+
+.menu__icon{
+
+
+}
+
+.menu__lupa-div:hover .menu__lupa{
+
+  width:393px;
+}
+
+.menu__lupa:focus{
+
+  width:393px;
+  text-indent:40px;
+
+}
+
+
+
+

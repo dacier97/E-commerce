@@ -1,0 +1,8 @@
+.app{
+
+  background: #E5E5E5;
+  font-family: 'Raleway', sans-serif;
+  /*color:#464646;*/
+  line-height: 1rem;
+  scroll-behavior: smooth;
+}
