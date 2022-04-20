@@ -1,0 +1,42 @@
+.footer{
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: auto;
+height: 102px;
+background: #FFFFFF;
+
+}
+
+.autor{
+
+width: 229px;
+
+}
+.autor__parrafo{
+
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+}
+
+@media screen and (min-width:360px) and (max-width:576px){
+}
+@media screen and (min-width:577px) and (max-width:768px){
+}
+@media screen and (min-width:769px) and (max-width:992px){
+
+  
+
+}
+@media screen and (min-width:993px) and (max-width:1200px){
+
+ 
+}
+@media screen and (min-width:1201px) and (max-width:1440px){
+
+
+} 

@@ -1,49 +1,124 @@
-.banner{
-
-  display: flex;
-  flex-direction: column;
-  background-color: aqua;
-  height: 360px;
-  width: auto;
-
-}
-
-.banner__img{
+  .banner{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+    
+  .banner__fondo{
+    
+      height: 192px;
+      background-image:url(../img/banner-image.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+    
+  .banner__anuncio{
+    
+      display: flex;
+      flex-direction: column;
+      align-items:  flex-start;
+      margin-left: 16px;
+      margin-top: 78px;
+      
+    }
+  .banner__titulo{
+    
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+      
+    }
+  .banner__descuento{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #FFFFFF;
+      
+    }
+  .btn{
+      margin-top: 16px;
+      width: 118px;
+      height: 40px;
+      background: #2A7AE4;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      }
+  .btn__text,
+  .btn__icon{
+        color: #FFFFFF;
+        
+      /* display: inline-flex;
+        align-items: center;
+        height: 100%;*/
+      }
+      
+  .btn__icon{
+        font-size: 1.5em;
+        background: rgb(0, 0, 0,0.08);
+        padding-top: 6px ;
+      }
   
-  height: 352px;
-  width: auto;
-  background-image:url(../img/banner-image.png);
-  background-position: center;
- 
-}
+    @media all and (min-width:768px) and (max-width: 1000px){
+  
+  .banner__fondo{
+    height: 352px;
+  }
+  
+  .banner__anuncio{
+  
+    margin-left: 32px;
+    margin-top: 161px;
 
-.banner__anuncio{
-
-  display: flex;
-  flex-direction: column;
-  max-width: 50%;
-  margin-left: 152px;
-  margin-top: 150px;
-}
-
-.banner__titulo{
-
+  }
+    
+  .banner__titulo{
+  
+  font-weight: 700;
   font-size: 52px;
   line-height: 61px;
-  color: #FFFFFF;
   
-}
-
-.banner__descuento{
-
-  font-size: 22px;
-  line-height: 26px;
-  color: #FFFFFF;
+  }
+    
+  .banner__descuento{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
   
-}
+  }
+    
+  }
 
+  @media all and (min-width:1001px){
 
+    .banner__fondo{
+      height: 352px;
+    }
 
+    .banner__anuncio{
 
+      margin-left:152px;
+      margin-top: 150px;
+    }
 
+    .banner__titulo{
   
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 61px;
+      
+      }
+
+    .banner__descuento{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+      
+      }
+  }

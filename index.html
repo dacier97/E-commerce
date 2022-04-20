@@ -2,48 +2,292 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <title>E-commerce|AluraGeek</title>
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/encabezado.css">
   <link rel="stylesheet" href="./css/banner.css">
+  <link rel="stylesheet" href="./css/stars.css">
+  <link rel="stylesheet" href="./css/contacto.css">
+  <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body class="app">
 
   <header class="encabezado">
-    <nav class="menu">
-          <a class="menu__link1" href="#">
-          <img class="menu__img" src="./img/Vector.png" alt=""></a>
-          <a class="menu__link2" href=""><span class="menu__span">Alura</span>Geek</a>  
-          <div class="menu__lupa-div"> 
-              <input class="menu__lupa" type="search" name="lupa" placeholder = "¿Que deseas Buscar?" required>
-              <div class="menu__btn">
-                <i class="fas fa-search menu__icon"></i>
-              </div>
-          </div>
-          <button class="menu__login" type="button">login</button>
-    </nav>
+    <nav class="head-nav">
+      <ul class="head-nav__list">
+          <li class="head-nav__logo"><a href="#"><img src="./img/Vector.png"alt="#"></a></li>
+          <li class="head-nav__alura"><a href="#"><span class="head-nav__span">Alura</span>Geek</a></li> 
+          <li class="head-nav__button"><button class="head-nav__btn" type="button">login</button></li>
+          <li class="head-nav__lupa"><i class="fas fa-search menu__icon"></i></li>
+      </ul>
+  </nav>
   </header>
 
-<main class="contenido">
-  <section class="banner">
-    <div class="banner__img">
-      <div class="banner__anuncio">
-        <h1 class="banner__titulo">Abril Promocional</h1>
-        <span class="banner__descuento">Productos seleccionados con 33% de descuento</span>
-        <div class="botones">
-          <a href="">Ver Consolas</a>
+  <main>
+    <section class="hero">
+      <div class="banner">
+        <div class="banner__fondo">
+           <div class="banner__anuncio">
+          <h1 class="banner__titulo">Abril Promocional</h1>
+          <span class="banner__descuento">Productos seleccionados con 33% de descuento</span>
+          <div class="btn">
+            <a class="btn__text"  href="">Ver Consolas</a>
+            <a class="btn__icon"><ion-icon name="caret-down-outline"></ion-icon></a>
+          </div>
+        </div>
         </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+
+    <section class="stars">
+
+      <div class="title">
+        <h2 class="title__h2">Star Wars</h2>
+        <a class="title__link" href="#">Ver todo</a>
+        <a class="title__icon" href="#"><ion-icon name="arrow-forward-outline"></ion-icon></a>
+      </div>
+      
+        <div class="productos">
+          
+            <div class="producto__items">
+               <a href="#" class="producto__link">
+                 <img class="producto__img" src="img/unsplash_1.png" alt="">
+               </a>
+               <h3 class="producto__nombre">Producto XYZ</h3>
+               <h3 class="producto__precio">$60,00</h3>
+               <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+            </div> 
+            <div class="producto__items">
+              <a href="#" class="producto__link">
+               <img class="producto__img" src="img/unsplash_2.png" alt="">
+              </a>
+              <h3 class="producto__nombre">Producto XYZ</h3>
+              <h3 class="producto__precio">$60,00</h3>
+              <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+            </div>
+            <div class="producto__items" >
+              <a href="#" class="producto__link">
+                    <img class="producto__img" src="img/unsplash_3.png" alt="">
+                </a>
+              <h3 class="producto__nombre">Producto XYZ</h3>
+              <h3 class="producto__precio">$60,00</h3>
+              <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+            </div>
+            <div class="producto__items" >
+              <a href="#" class="producto__link">
+              <img class="producto__img" src="img/unsplash_4.png" alt="">
+              </a>
+              <h3 class="producto__nombre">Producto XYZ</h3>
+              <h3 class="producto__precio">$60,00</h3>
+              <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+            </div>
+            <div class="producto__items">
+              <a href="#" class="producto__link">
+              <img class="producto__img" src="img/unsplash_5.png" alt="">
+              </a>
+              <h3 class="producto__nombre">Producto XYZ</h3>
+              <h3 class="producto__precio">$60,00</h3>
+              <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+           </div> 
+            <div class="producto__items">
+              <a href="#" class="producto__link">
+              <img class="producto__img" src="img/unsplash_6.png" alt="">
+              </a> 
+              <h3 class="producto__nombre">Producto XYZ</h3>
+              <h3 class="producto__precio">$60,00</h3>
+              <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+            </div>    
+          
+        </div>    
+
+    </section>
+
+    <section class="consolas">
+
+      <div class="title">
+        <h2 class="title__h2">Consolas</h2>
+        <a class="title__link" href="#">Ver todo</a>
+        <a class="title__icon" href="#"><ion-icon name="arrow-forward-outline"></ion-icon></a>
+      </div>
+
+      <div class="productos">
+          
+        <div class="producto__items">
+           <a href="#" class="producto__link">
+             <img class="producto__img" src="img/unsplash_7.png" alt="">
+           </a>
+           <h3 class="producto__nombre">Producto XYZ</h3>
+           <h3 class="producto__precio">$60,00</h3>
+           <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+        </div> 
+        <div class="producto__items">
+          <a href="#" class="producto__link">
+           <img class="producto__img" src="img/unsplash_8.png" alt="">
+          </a>
+          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__precio">$60,00</h3>
+          <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+        </div>
+        <div class="producto__items" >
+          <a href="#" class="producto__link">
+                <img class="producto__img" src="img/unsplash_9.png" alt="">
+            </a>
+          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__precio">$60,00</h3>
+          <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+        </div>
+        <div class="producto__items" >
+          <a href="#" class="producto__link">
+          <img class="producto__img" src="img/unsplash_10.png" alt="">
+          </a>
+          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__precio">$60,00</h3>
+          <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+        </div>
+        <div class="producto__items">
+          <a href="#" class="producto__link">
+          <img class="producto__img" src="img/unsplash_11.png" alt="">
+          </a>
+          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__precio">$60,00</h3>
+          <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+       </div> 
+        <div class="producto__items">
+          <a href="#" class="producto__link">
+          <img class="producto__img" src="img/unsplash_12.png" alt="">
+          </a> 
+          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__precio">$60,00</h3>
+          <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+        </div>    
+      
+    </div>    
+
+
+    </section>
+
+    <section class="diversos">
+
+      <div class="title">
+        <h2 class="title__h2">Diversos</h2>
+        <a class="title__link" href="#">Ver todo</a>
+        <a class="title__icon" href="#"><ion-icon name="arrow-forward-outline"></ion-icon></a>
+      </div>
+
+      <div class="productos">
+          
+        <div class="producto__items">
+           <a href="#" class="producto__link">
+             <img class="producto__img" src="img/unsplash_13.png" alt="">
+           </a>
+           <h3 class="producto__nombre">Producto XYZ</h3>
+           <h3 class="producto__precio">$60,00</h3>
+           <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+        </div> 
+        <div class="producto__items">
+          <a href="#" class="producto__link">
+           <img class="producto__img" src="img/unsplash_14.png" alt="">
+          </a>
+          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__precio">$60,00</h3>
+          <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+        </div>
+        <div class="producto__items" >
+          <a href="#" class="producto__link">
+                <img class="producto__img" src="img/unsplash_15.png" alt="">
+            </a>
+          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__precio">$60,00</h3>
+          <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+        </div>
+        <div class="producto__items" >
+          <a href="#" class="producto__link">
+          <img class="producto__img" src="img/unsplash_16.png" alt="">
+          </a>
+          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__precio">$60,00</h3>
+          <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+        </div>
+        <div class="producto__items">
+          <a href="#" class="producto__link">
+          <img class="producto__img" src="img/unsplash_17.png" alt="">
+          </a>
+          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__precio">$60,00</h3>
+          <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+       </div> 
+        <div class="producto__items">
+          <a href="#" class="producto__link">
+          <img class="producto__img" src="img/unsplash_18.png" alt="">
+          </a> 
+          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__precio">$60,00</h3>
+          <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
+        </div>    
+      
+    </div>    
+
+    </section>
+
+    <section class="contacto">
+
+      <header class="encabezado--contact">
+        <nav class="head-nav--contact">
+          <ul class="head-nav__list--contact">
+              <li class="head-nav__logo--contact"><a href="#"><img class="head-nav__img" src="./img/Vector.png"alt="#"></a></li>
+              <li class="head-nav__alura--contact"><a class="head-nav__logo" href="#"><span class="head-nav__span--contact">Alura</span>Geek</a></li> 
+              <li class="head-nav__button--contact"><button class="head-nav__btn" type="button">login</button></li>
+              <li class="head-nav__lupa--contact"><i class="fas fa-search menu__icon"></i></li>
+          </ul>
+        </nav>
+      </header>
+
+     <div class="informacion">
+
+        <ul class="informacion-list">
+          <li class="informacion-list__info"><a class="informacion-list__link" href="#">Quienes Somos</a></li>
+          <li class="informacion-list__info"><a class="informacion-list__link"  href="#">Politica de Privacidad</a></li>
+          <li class="informacion-list__info"><a class="informacion-list__link"  href="#">Programa de Fidelidad</a></li>
+          <li class="informacion-list__info"><a class="informacion-list__link"  href="#">Nuestras Tiendas</a></li>
+          <li class="informacion-list__info"><a class="informacion-list__link"  href="#">Quiero ser Franquiciado</a></li>
+          <li class="informacion-list__info"><a class="informacion-list__link"  href="#">Anuncie Aqui</a></li>
+       </ul>
+
+     </div>
+
+      <div class="form">
+
+        <p class="form-parrafo">Hable con nosotros</p>
+
+        <form action="" class="formulario">
+          <input type="text" name="nombre" class="formulario__nombres" placeholder="Daniel ortiz">
+          <textarea name="mensaje" class="formulario__mensaje" cols="30" rows="10" placeholder="Escribe tu Mensaje"></textarea>
+          <input class="formulario__send" type="submit" value="enviar" >
+        </form>
+
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <div class="autor">
+          <p class="autor__parrafo">Desarrollado Por Daniel Ortiz 
+          <span class="autor_span">2022</span></p>
+      </div>
+    </footer>
+
+  </main>
+
 <script src="https://kit.fontawesome.com/2f99950054.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
 

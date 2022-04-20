@@ -1,0 +1,300 @@
+.contacto{
+
+display: flex;
+flex-direction: column;
+padding: 16px;
+height: 553px;
+background: #EAF2FD;
+}
+.logo{
+
+  height: 82px;
+}
+.informacion{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 206px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+}
+.informacion-list{
+
+  text-align: center;
+  margin-top: 31px;
+}
+.informacion-list__info{
+
+  padding-bottom: 16px;
+}
+.informacion-list__link{
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+
+}
+.form{
+
+  display: flex;
+  flex-direction: column;
+  height: 277px;
+  margin-top: 28px;
+ 
+}
+.form-parrafo{
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 8px 0px;
+ 
+}
+.formulario{
+
+  display: flex;
+  flex-direction: column;
+}
+.formulario__nombres{
+
+  width: 100%;
+  height: 56px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+
+}
+.formulario__mensaje{
+
+  width: 100%;
+  height: 82px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.formulario__send{
+
+  width: 133px;
+  height: 40px;
+  background: #2A7AE4;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 10px;
+ 
+  
+}
+.encabezado--contact{
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  background: #EAF2FD; 
+
+
+}
+.head-nav--contact{
+  height:auto;
+}
+.head-nav__button--contact{
+
+  display: none;
+}
+.head-nav__lupa--contact{
+
+  display: none;
+}
+.head-nav__list--contact{
+
+  display: flex;
+  align-items: center;
+
+}
+.head-nav__img{
+
+  Width: 40px;
+  Height: 29px;
+
+}
+.head-nav__logo{
+  
+  font-size:25px;
+  
+}
+.head-nav__span--contact{
+
+  color:#2A7AE4;
+  
+}
+
+@media screen and (min-width:576px) and (max-width:768px){
+
+  .contacto{
+  
+    flex-direction: row;
+    justify-content: space-between;
+    Height: 364px;
+    position: relative;
+    
+  }
+
+  .encabezado--contact{
+
+    position: absolute;
+    top: 45px;
+    
+  }
+
+  .informacion{
+
+    position: absolute;
+    top: 145px;
+  }
+
+  .form{
+    
+    position: absolute;
+    left: 290px;
+    width: 60vw;
+  }
+
+}
+@media screen and (min-width:769px) and (max-width:992px){
+
+  .contacto{
+  
+    flex-direction: row;
+    justify-content: space-between;
+    Height: 364px;
+    position: relative;
+    
+  }
+
+  .encabezado--contact{
+
+    position: absolute;
+    top: 45px;
+    width: 20vw;
+    
+  }
+
+  .informacion{
+
+    position: absolute;
+    top: 145px;
+    width: 20vw;
+  }
+
+  .form{
+    
+    position: absolute;
+    left: 290px;
+    width: 65vw;
+  }
+
+}
+@media screen and (min-width:993px) and (max-width:1200px){
+
+  .contacto{
+  
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    Height: 368px;
+    position: relative;
+    
+  }
+  .encabezado--contact{
+
+    position: absolute;
+    left: 20px;
+    top: 65px;
+    justify-content: flex-end;
+    
+  }
+  .informacion{
+
+    position: absolute;
+    top: 65px;
+    left: 400px;
+    width: 20vw;
+    
+  }
+  .form{
+    
+    position: absolute;
+    top: 40px;
+    width: 35vw;
+    right: 30px;
+   
+  }
+  .head-nav__list--contact{
+
+    position: relative;
+  }
+
+  .head-nav__logo--contact{
+    position: absolute;
+    right:130px;
+
+
+  }
+
+}
+@media screen and (min-width:1201px) and (max-width:1440px){
+
+  .contacto{
+  
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background: #EAF2FD;
+    Height: 368px;
+    position: relative;
+    
+  }
+
+  .encabezado--contact{
+    
+    position: absolute;
+    left: 160px;
+    top: 40px;
+    width: 240px;
+    
+  }
+
+  .informacion{
+
+    position: absolute;
+    top: 65px;
+    left: 400px;
+    width: 20vw;
+    
+  }
+
+  .form{
+    
+    position: absolute;
+    top: 40px;
+    width: 35vw;
+    right: 150px;
+   
+  }
+
+  .head-nav__logo--contact{
+    position: absolute;
+    right:200px;
+   
+  }
+  .head-nav__logo{
+   
+    margin-right: 180px;
+  
+    }
+
+}
