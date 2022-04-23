@@ -37,8 +37,8 @@ padding-right:12px;
   flex-wrap: wrap;
   justify-content:space-evenly;
   align-items: center;
-  background: #E5E5E5;
- 
+  padding-bottom: 64px;
+  
 } 
 .producto__items{
   

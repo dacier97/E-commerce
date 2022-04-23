@@ -4,7 +4,6 @@
   background: #FFFFFF;
   padding: 14px 18px 14px 18px;
 }
-
 .head-nav__list{
 
   display: flex;
@@ -23,7 +22,7 @@
   flex-grow: 1;
   padding-left: 5px;
   order: 2;
-  font-size: 10px;
+  font-size: 16px;
 
 }
 
@@ -33,15 +32,16 @@
   
 }
 
+ion-icon {
+  color:#464646;
+  font-size: 20px;
+  --ionicon-stroke-width: 56px;
+}
+
 .head-nav__lupa{
   
   order: 4;
   
-}
-
-.head-nav__lupa{
-  height: 18px;
-  width: 18px;
 }
 
 .head-nav__button{
@@ -117,7 +117,7 @@
 
     width: 40px ;
     height: 29px ;
-    margin-left: 140px;
+    margin-left: 150px;
     
   }
 
@@ -126,6 +126,7 @@
     
     position: absolute;
     padding: 8px 0 0 5px;
+    margin-left: 10px;
        
   }
 
