@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <title>E-commerce|AluraGeek</title>
-  <link rel="stylesheet" href="./css/normalize.css">
+ <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/encabezado.css">
@@ -25,7 +25,11 @@
           <li class="head-nav__logo"><a href="index.html"><img src="./img/Vector.png"alt="#"></a></li>
           <li class="head-nav__alura"><a href="index.html"><span class="head-nav__span">Alura</span>Geek</a></li> 
           <li class="head-nav__button"><button class="head-nav__btn" type="submit" onclick="window.location.href='login.html'">login</button></li>
-          <li class="head-nav__lupa"><ion-icon name="search-outline"></ion-icon></li>
+          <form class="head-form head-outside">
+            <input type="text" class="head-input__texto" id= "head-input__text" placeholder="¿Qué estás buscando?" onkeyup="search()">
+            <button class="head-input__boton"><ion-icon name="search-outline"></ion-icon></button>
+          </form>
+          <button class="head-nav__lupa"><ion-icon name="search-outline"></ion-icon></button>
       </ul>
   </nav>
   </header>
@@ -46,7 +50,7 @@
       </div>
     </section>
 
-    <section class="stars">
+    <section class="stars" class="list-stars">
 
       <div class="title">
         <h2 class="title__h2">Star Wars</h2>
@@ -60,7 +64,7 @@
                <a href="#" class="producto__link">
                  <img class="producto__img" src="img/unsplash_1.png" alt="">
                </a>
-               <h3 class="producto__nombre">Producto XYZ</h3>
+               <h3 class="producto__nombre">Kylo Ren</h3>
                <h3 class="producto__precio">$60,00</h3>
                <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
             </div> 
@@ -68,7 +72,7 @@
               <a href="#" class="producto__link">
                <img class="producto__img" src="img/unsplash_2.png" alt="">
               </a>
-              <h3 class="producto__nombre">Producto XYZ</h3>
+              <h3 class="producto__nombre">Boba Fett</h3>
               <h3 class="producto__precio">$60,00</h3>
               <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
             </div>
@@ -76,7 +80,7 @@
               <a href="#" class="producto__link">
                     <img class="producto__img" src="img/unsplash_3.png" alt="">
                 </a>
-              <h3 class="producto__nombre">Producto XYZ</h3>
+              <h3 class="producto__nombre">Mug Boba</h3>
               <h3 class="producto__precio">$60,00</h3>
               <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
             </div>
@@ -84,7 +88,7 @@
               <a href="#" class="producto__link">
               <img class="producto__img" src="img/unsplash_4.png" alt="">
               </a>
-              <h3 class="producto__nombre">Producto XYZ</h3>
+              <h3 class="producto__nombre">Darth Vader</h3>
               <h3 class="producto__precio">$60,00</h3>
               <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
             </div>
@@ -92,7 +96,7 @@
               <a href="#" class="producto__link">
               <img class="producto__img" src="img/unsplash_5.png" alt="">
               </a>
-              <h3 class="producto__nombre">Producto XYZ</h3>
+              <h3 class="producto__nombre">Yoda</h3>
               <h3 class="producto__precio">$60,00</h3>
               <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
            </div> 
@@ -100,7 +104,7 @@
               <a href="#" class="producto__link">
               <img class="producto__img" src="img/unsplash_6.png" alt="">
               </a> 
-              <h3 class="producto__nombre">Producto XYZ</h3>
+              <h3 class="producto__nombre">Yoda Mini</h3>
               <h3 class="producto__precio">$60,00</h3>
               <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
             </div>    
@@ -109,7 +113,7 @@
 
     </section>
 
-    <section   id="consolas" class="consolas">
+    <section   id="consolas" class="consolas" class="list-stars">
 
       <div class="title">
         <h2 class="title__h2">Consolas</h2>
@@ -123,7 +127,7 @@
            <a href="#" class="producto__link">
              <img class="producto__img" src="img/unsplash_7.png" alt="">
            </a>
-           <h3 class="producto__nombre">Producto XYZ</h3>
+           <h3 class="producto__nombre">Wii</h3>
            <h3 class="producto__precio">$60,00</h3>
            <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
         </div> 
@@ -131,7 +135,7 @@
           <a href="#" class="producto__link">
            <img class="producto__img" src="img/unsplash_8.png" alt="">
           </a>
-          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__nombre">Games</h3>
           <h3 class="producto__precio">$60,00</h3>
           <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
         </div>
@@ -139,7 +143,7 @@
           <a href="#" class="producto__link">
                 <img class="producto__img" src="img/unsplash_9.png" alt="">
             </a>
-          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__nombre">Nintendo 64</h3>
           <h3 class="producto__precio">$60,00</h3>
           <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
         </div>
@@ -147,7 +151,7 @@
           <a href="#" class="producto__link">
           <img class="producto__img" src="img/unsplash_10.png" alt="">
           </a>
-          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__nombre">Nintendo DS</h3>
           <h3 class="producto__precio">$60,00</h3>
           <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
         </div>
@@ -155,7 +159,7 @@
           <a href="#" class="producto__link">
           <img class="producto__img" src="img/unsplash_11.png" alt="">
           </a>
-          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__nombre">Xbox 360</h3>
           <h3 class="producto__precio">$60,00</h3>
           <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
        </div> 
@@ -163,7 +167,7 @@
           <a href="#" class="producto__link">
           <img class="producto__img" src="img/unsplash_12.png" alt="">
           </a> 
-          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__nombre">Nintendo Gamecube</h3>
           <h3 class="producto__precio">$60,00</h3>
           <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
         </div>    
@@ -172,7 +176,7 @@
 
     </section>
 
-    <section class="diversos">
+    <section class="diversos" class="list-stars">
 
       <div class="title">
         <h2 class="title__h2">Diversos</h2>
@@ -186,7 +190,7 @@
            <a href="#" class="producto__link">
              <img class="producto__img" src="img/unsplash_13.png" alt="">
            </a>
-           <h3 class="producto__nombre">Producto XYZ</h3>
+           <h3 class="producto__nombre">Play Station</h3>
            <h3 class="producto__precio">$60,00</h3>
            <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
         </div> 
@@ -194,7 +198,7 @@
           <a href="#" class="producto__link">
            <img class="producto__img" src="img/unsplash_14.png" alt="">
           </a>
-          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__nombre">T-Shirt Lab</h3>
           <h3 class="producto__precio">$60,00</h3>
           <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
         </div>
@@ -202,7 +206,7 @@
           <a href="#" class="producto__link">
                 <img class="producto__img" src="img/unsplash_15.png" alt="">
             </a>
-          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__nombre">Radio por Internet</h3>
           <h3 class="producto__precio">$60,00</h3>
           <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
         </div>
@@ -210,7 +214,7 @@
           <a href="#" class="producto__link">
           <img class="producto__img" src="img/unsplash_16.png" alt="">
           </a>
-          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__nombre">Gafas realidad virtual</h3>
           <h3 class="producto__precio">$60,00</h3>
           <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
         </div>
@@ -218,7 +222,7 @@
           <a href="#" class="producto__link">
           <img class="producto__img" src="img/unsplash_17.png" alt="">
           </a>
-          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__nombre">Pikachu</h3>
           <h3 class="producto__precio">$60,00</h3>
           <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
        </div> 
@@ -226,7 +230,7 @@
           <a href="#" class="producto__link">
           <img class="producto__img" src="img/unsplash_18.png" alt="">
           </a> 
-          <h3 class="producto__nombre">Producto XYZ</h3>
+          <h3 class="producto__nombre">Pokemon</h3>
           <h3 class="producto__precio">$60,00</h3>
           <a class="producto-und__link" href=""><h3 class="producto__verproducto">Ver Producto</h3></a>
         </div>    
@@ -283,10 +287,12 @@
     </footer>
 
   </main>
-
-<script src="https://kit.fontawesome.com/2f99950054.js" crossorigin="anonymous"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./js/login-auteti.js"></script>
+  <script src="./js/search-products.js"></script>
+  <script src="./js/encabezado.js"></script>
+  <script src="https://kit.fontawesome.com/2f99950054.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
 

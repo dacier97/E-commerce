@@ -36,51 +36,19 @@
           <form name=formulario class="login-form__formu" id="formLogin" action="INICIO SESION">
             <input class="login-form__mail" type="email" name=login id="email" pattern="^[a-zA-Z0-9_.-]+@([a-zA-Z0-9]+\.)+([a-zA-Z]{2,4})" placeholder="Escriba su correo electronico"/>
             <input class="login-form__pass" type="password" name=password id="password" placeholder="Escriba su contrasena"/>
-            <input onclick="log()" type="submit" class="login-form__btn" value="Inicio"/>
+            <input type="submit" class="login-form__btn" value="Inicio"/>
           </form>
           <span id="mensaje__error"></span>
       </div>
     </section>
 
-    <section class="contacto">
-
-      <header class="encabezado--contact">
-        <nav class="head-nav--contact">
-          <ul class="head-nav__list--contact">
-              <li class="head-nav__logo--contact"><a href="#"><img class="head-nav__img" src="./img/Vector.png"alt="#"></a></li>
-              <li class="head-nav__alura--contact"><a class="head-nav__logo" href="#"><span class="head-nav__span--contact">Alura</span>Geek</a></li> 
-              <li class="head-nav__button--contact"><button class="head-nav__btn" type="button">login</button></li>
-              <li class="head-nav__lupa--contact"><i class="fas fa-search menu__icon"></i></li>
-          </ul>
-        </nav>
-      </header>
-
-     <div class="informacion">
-
-        <ul class="informacion-list">
-          <li class="informacion-list__info"><a class="informacion-list__link" href="#">Quienes Somos</a></li>
-          <li class="informacion-list__info"><a class="informacion-list__link"  href="#">Politica de Privacidad</a></li>
-          <li class="informacion-list__info"><a class="informacion-list__link"  href="#">Programa de Fidelidad</a></li>
-          <li class="informacion-list__info"><a class="informacion-list__link"  href="#">Nuestras Tiendas</a></li>
-          <li class="informacion-list__info"><a class="informacion-list__link"  href="#">Quiero ser Franquiciado</a></li>
-          <li class="informacion-list__info"><a class="informacion-list__link"  href="#">Anuncie Aqui</a></li>
-       </ul>
-
-     </div>
-
-      <div class="form">
-
-        <p class="form-parrafo">Hable con nosotros</p>
-
-        <form action="" class="formulario">
-          <input type="text" name="nombre" class="formulario__nombres" placeholder="Daniel ortiz">
-          <textarea name="mensaje" class="formulario__mensaje" cols="30" rows="10" placeholder="Escribe tu Mensaje"></textarea>
-          <input class="formulario__send" type="submit" value="enviar" >
-        </form>
-
-      </div>
-
-    </section>
+    <section class="exitoso">
+      <div class="exitosoContainer">
+          <i class="fa-solid fa-circle-check"></i>
+          <h1>El producto se agrego exitosamente!!</h1>
+          <a href="#"><button>Volver</button></a>
+      </div>   
+  </section>
 
     <footer class="footer">
       <div class="autor">
@@ -90,9 +58,6 @@
     </footer>
 
   </main>
-  <script src="./js/validar-login.js"></script>
-  <script src="./js/login-auteti.js"></script>
-  <script type="module" src="./controllers/client-controller.js"></script>
   <!--<script src="js/login-auteti.js"></script>-->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

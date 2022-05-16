@@ -7,41 +7,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49042185bb.js" crossorigin="anonymous"></script>
     <title>E-commerce|AluraGeek</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/encabezado.css">
+    <link rel="stylesheet" href="./css/stars.css">
     <link rel="stylesheet" href="./css/contacto.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/allproductos.css">
+    <link rel="stylesheet" href="./css/agregar_producto.css">
     <link rel="stylesheet" href="./css/footer.css">
   </head>
 <body>
+
+  
 
   <header class="encabezado">
     <nav class="head-nav">
       <ul class="head-nav__list">
           <li class="head-nav__logo"><a href="index.html"><img src="./img/Vector.png"alt="#"></a></li>
           <li class="head-nav__alura"><a href="index.html"><span class="head-nav__span">Alura</span>Geek</a></li> 
-          <li class="head-nav__button"><button class="head-nav__btn" type="button">login</button></li>
+          <li class="head-nav__button"><button class="head-nav__btn"  id="cambio" type="button">Salir</button></li>
           <li class="head-nav__lupa"><ion-icon name="search-outline"></ion-icon></li>
       </ul>
   </nav>
   </header>
 
   <main>
-    <section class="login">
-      <div class="login-form">
-          <h3 class="login-form__title">Iniciar seccion</h3>
-          <form name=formulario class="login-form__formu" id="formLogin" action="INICIO SESION">
-            <input class="login-form__mail" type="email" name=login id="email" pattern="^[a-zA-Z0-9_.-]+@([a-zA-Z0-9]+\.)+([a-zA-Z]{2,4})" placeholder="Escriba su correo electronico"/>
-            <input class="login-form__pass" type="password" name=password id="password" placeholder="Escriba su contrasena"/>
-            <input onclick="log()" type="submit" class="login-form__btn" value="Inicio"/>
-          </form>
-          <span id="mensaje__error"></span>
+
+    <!--<section class="stars">
+
+
+
+        <div class="title--all">
+        <h2 class="title__h2--all">Todos los productos</h2>
+        <a class="title__link--all" href="#">Agregar producto</a>
+        </div>
+
+    </section>-->
+    <section class="agregarP">
+      <div class="agregarP-contenedor">
+        <h1 class="agregarP-parrafo">Agregar nuevo producto</h1>
+          <div class="imagen">
+            <div class="imagen-insert" draggable="true" datos-square>
+              <div data-delete>
+                <div class="imagen-Dibujo"><i class="fa-solid fa-image"></i></div>
+                <div class="imagen-plus"><i class="fa-solid fa-plus"></i></div>
+                <h3 class="imagen-parrafo">Agregar una imagen para el producto</h3>
+              </div>
+            </div>
+            <h5 class="imagen-or">O</h5>
+            <button class="imagen-computer" id="imagen-disco">Busque en su computador</button>
+          </div>
+          <form  class="formulario-Agregar" data-form>
+            <label for="formulario-label" class="formulario-label">Categoria</label>
+            <select name="categoria" id="categoria-Principal" class="input-nueva__Categoria">
+                <option value="" disabled selected hidden></option>
+                <option value="">Star Wars</option>
+                <option value="">Consolas</option>
+                <option value="">Diversos</option>
+            </select>
+            <div class="input-nueva__Nombre">
+                <input type="text" id="input-nombre" placeholder="Nombre del producto" pattern="(^\S+\w.*)" maxlength="20" required>
+            </div>
+            <div class="input-nuevo__Precio">
+                <input type="text" id="input-precio" name="precio" placeholder="Precio del producto">
+            </div>
+            <div class="input-nuevo__Descripcion">
+                <textarea id="input-descripcion" placeholder="Descripción del producto" maxlength="150" required></textarea>
+            </div>
+            <button type="submit" class="agregar-Prod" id="sendBtn">Agregar producto</button>
+        </form>
       </div>
     </section>
-
     <section class="contacto">
 
       <header class="encabezado--contact">
@@ -81,7 +121,6 @@
       </div>
 
     </section>
-
     <footer class="footer">
       <div class="autor">
           <p class="autor__parrafo">Desarrollado Por Daniel Ortiz 
@@ -90,11 +129,13 @@
     </footer>
 
   </main>
-  <script src="./js/validar-login.js"></script>
-  <script src="./js/login-auteti.js"></script>
-  <script type="module" src="./controllers/client-controller.js"></script>
-  <!--<script src="js/login-auteti.js"></script>-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="module" src="./js/load-products.js"></script>
+  <script src="./js/validar_precio.js"></script>
+  <script src="./js/logout-agre.js"></script>
+  <!--<script src="js/search-products.js"></script>-->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
 </body>
 </html>

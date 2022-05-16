@@ -1,5 +1,4 @@
 .head-nav{
-
   Height: 72px;
   background: #FFFFFF;
   padding: 14px 18px 14px 18px;
@@ -11,12 +10,11 @@
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
-  
+  position: relative;
 }
 .head-nav__logo{
   order: 1;
 }
-
 .head-nav__alura{
 
   flex-grow: 1;
@@ -25,33 +23,29 @@
   font-size: 16px;
 
 }
-
 .head-nav__span{
 
   color: #2A7AE4;
   
 }
-
 ion-icon {
   color:#464646;
   font-size: 20px;
   --ionicon-stroke-width: 56px;
 }
-
 .head-nav__lupa{
   
   order: 4;
+  border: none;
+  background-color: transparent;
   
 }
-
 .head-nav__button{
-  
  flex-grow: 1;
  order: 3;
  padding: 0;
  border-radius: 30px;
   }
-
 .head-nav__btn{
   font-weight: 600;
   font-size: 14px;
@@ -62,100 +56,270 @@ ion-icon {
   border-radius: 50em;
 
 }
-
 .head-nav__btn:hover{
 
   transform: scale(1.2);
   cursor: pointer;
 }
+.head-form{
 
-@media all and (min-width:768px) and (max-width: 1000px){
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  height: 50px;
+  top:80px;
+  right: 20px;
+  transition: transform 0.4s;
+  order: 5;
+}
+.head-outside{
+  transform: translateY(-360%);
+}
+.head-input__texto{
+  flex-grow: 2;
+  width: auto;
+  border: none;
+  border-radius: 50px;
+  background: #c0d7f4;
+  padding-left: 1rem;
+  padding-right: 2.5rem;
+  height: 70%;
+}
+.head-input__boton{
+  
+  position: absolute;
+  left: 180px;
+  top:5px;
+  border: none;
+  background-color: transparent;
+}
+/*.header__input-boton img{
+  width: 100%;
+}*/
+
+@media all and (min-width: 768px) and (max-width: 1000px){
 
   .head-nav__list{
-
     justify-content: center;
-    
   }
-
   .head-nav__logo{
     order: 1;
   }
-
   .head-nav__alura{
-
-    
     order: 2;
-  
+    
   }
-
   .head-nav__lupa{
 
-    order: 3;
-    flex-grow: 1;
-  
-}
+    /*order: 3;
+    flex-grow: 1;*/
+    display: none;
 
+  }
   .head-nav__button{
-
-    order: 4;
+    order: 5;
     width: auto;
     flex-grow: 0;
   }
+  .head-form{
+    display:flex;
+    align-items:center;
+    position: relative;
+    height:40px;
+    top: 0;
+    right:270px;
+    order: 3;
+    
+  }
+  .head-outside{
+    transform: none;
+  }
+  .head-input__texto{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background: rgb(242, 240, 240);
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+    
+
+  }
+  .head-input__boton{
+    position: absolute;
+    right: 0px;
+    top: 20%;
+    /*transform: translateY(-50%);*/
+    width: 37px;
+    flex-grow: 2;
+  } 
+
+  /*.header__input-boton img{
+    width: 60%;
+  }*/
   
 }
 
-@media all and (min-width:1001px){
+@media all and (min-width: 1001px)and (max-width: 1200px){
 
   .head-nav__list{
 
     position: relative;
     font-size: 16px;
   }
-
   .head-nav__logo{
-
 
     width: 40px ;
     height: 29px ;
     margin-left: 150px;
     
   }
-
   .head-nav__alura{
 
     
     position: absolute;
     padding: 8px 0 0 5px;
     margin-left: 10px;
-       
-  }
+    
 
+  }
   .head-nav__span{
 
     margin-left: 180px;
     
   }
-
   .head-nav__lupa{
 
-    position: absolute;
+    /*position: absolute;
     flex-grow: 1;
-    right: 586px;
+    right: 586px;*/
+    display: none;
   
-}
-
+  }
   .head-nav__button{
 
-    
+    order: 5;
     width: auto;
     flex-grow: 0;
     margin-right:152px;
 
   }
-
   .head-nav__btn{
 
     font-size: 16px;
   }
+  .head-form{
+    display:flex;
+    position: relative;
+    align-items: center;
+    height:40px;
+    top: 0;
+    order: 3;
+  }
+  .head-outside{
+    transform: none;
+  }
+  .head-input__texto{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background: rgb(242, 240, 240);
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+    
+    
+  }
+  .head-input__boton{
+    position: absolute;
+    right: 0px;
+    top: 20%;
+    /*transform: translateY(-50%);*/
+    width: 37px;
+    padding-left: 30px;
+  
+   
+  } 
+}
+
+@media all and (min-width: 1201px)and (max-width:1440px){
+
+  .head-nav__list{
+
+    position: relative;
+    font-size: 16px;
+  }
+  .head-nav__logo{
+
+    width: 40px ;
+    height: 29px ;
+    margin-left: 150px;
+    
+  }
+  .head-nav__alura{
+
+    
+    position: absolute;
+    padding: 8px 0 0 5px;
+    margin-left: 10px;
+    
+
+  }
+  .head-nav__span{
+
+    margin-left: 180px;
+    
+  }
+  .head-nav__lupa{
+
+    /*position: absolute;
+    flex-grow: 1;
+    right: 586px;*/
+    display: none;
+  
+  }
+  .head-nav__button{
+
+    order: 5;
+    width: auto;
+    flex-grow: 0;
+    margin-right:152px;
+
+  }
+  .head-nav__btn{
+
+    font-size: 16px;
+  }
+  .head-form{
+    display:flex;
+    position: relative;
+    align-items: center;
+    height:40px;
+    top: 0;
+    order: 3;
+    right: 300px;
+  }
+  .head-outside{
+    transform: none;
+  }
+  .head-input__texto{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background: rgb(242, 240, 240);
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+    
+    
+  }
+  .head-input__boton{
+    position: absolute;
+    right: 0px;
+    top: 20%;
+    /*transform: translateY(-50%);*/
+    width: 37px;
+    padding-left: 30px;
+  
+   
+  } 
+
 }
 
